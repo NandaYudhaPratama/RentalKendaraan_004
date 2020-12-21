@@ -21,5 +21,6 @@ namespace RentalKendaraan_004.Models
         [MaxLength(13, ErrorMessage = "No HP minimal 13 angka")]
         public string NoHp { get; set; }
         public int? IdGender { get; set; }
+        public Gender IdGenderNavigation { get; set; }
     }
 }

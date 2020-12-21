@@ -18,6 +18,7 @@ namespace RentalKendaraan_004.Models
         public int? IdKondisi { get; set; }
         public int? Denda { get; set; }
 
+        public Peminjaman IdPeminjamanNavigation { get; set; }
         public KondisiKendaraan IdKondisiNavigation { get; set; }
     }
 }

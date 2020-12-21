@@ -22,6 +22,10 @@ namespace RentalKendaraan_004.Models
 
         [Required(ErrorMessage = "Biaya tidak boleh kosong")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Hanya boleh diisi dengan angka")]
+
+        public Customer IdCustomerNavigation { get; set; }
+        public Jaminan IdJaminanNavigation { get; set; }
+        public Kendaraan IdKendaraanNavigation { get; set; }
         public int? Biaya { get; set; }
     }
 }
